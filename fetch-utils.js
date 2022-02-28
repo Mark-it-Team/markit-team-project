@@ -1,5 +1,6 @@
-const SUPABASE_URL = '';
-const SUPABASE_KEY = '';
+
+const SUPABASE_URL = 'https://ntegguvcsbrefltqhojv.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im50ZWdndXZjc2JyZWZsdHFob2p2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDYwNzIwNjEsImV4cCI6MTk2MTY0ODA2MX0.UsQcV5MVZfD-77jViimoke-OeHyMyc9MLiP18wash6I';
 
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
