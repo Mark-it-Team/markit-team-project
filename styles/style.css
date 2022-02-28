@@ -111,6 +111,10 @@ footer {
     top: 90px;
 }
 
+img {
+    width: 500px;
+}
+
 .auth-main {
     display: flex;
     flex-direction: row;
