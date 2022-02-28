@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,21 +13,15 @@
     <link rel="stylesheet" href="./styles/home.css">
     <title>Document</title>
 </head>
-
 <body>
-    <header>
-    </header>
-    <main class="auth-main">
-        <div class="left">
-            
-        </div>
-        <div class="right">
-            
-        </div>
-    </main>
-    <footer>
-    </footer>
-    <script type="module" src="./app.js"></script>
+    <div class="auth-container">
+        <form id="sign-in">
+            <h3>Sign In</h3>
+            <label>Email </label><input type="email" name="email" id="sign-in-email"/>
+            <label>Password </label><input type="password" name="password" id="sign-in-password"/>
+            <button>Submit</button>
+        </form>
+    </div>
+    <script type="module" src="./signin.js"></script>
 </body>
-
 </html>
