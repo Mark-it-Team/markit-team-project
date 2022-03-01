@@ -1,4 +1,4 @@
-import { logout, fetchProducts, fetchVendorDetails } from '../fetch-utils.js';
+import { logout, fetchProducts, fetchVendorDetails, addCart, getUser } from '../fetch-utils.js';
 import { renderProduct, renderVendorDetail } from '../render-utils.js';
 
 const logoutButton = document.getElementById('logout');
@@ -17,9 +17,8 @@ homeBtn.addEventListener('click', () => {
 });
 
 shoppingBtn.addEventListener('click', () => {
-    location.replace(`./vendor_detail`);
+    location.replace(`../reserved`);
 });
-
 
 export async function displayDetails() {
     const data = +params.get('id');
@@ -29,6 +28,11 @@ export async function displayDetails() {
     const products = await fetchProducts(data);
     for (let product of products) {
         const productEl = renderProduct(product);
+        productEl.addEventListener('click', async () => {
+            const newItem = { customer_id: getUser().id, product_id: product.id };
+            await addCart(newItem);
+            console.log('cart', newItem);
+        });
         productContainer.append(productEl);
     }
 }

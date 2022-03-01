@@ -51,6 +51,11 @@ export async function deleteFromCart(id) {
     return checkError(resp);
 }
 
+export async function addCart(item) {
+    const resp = await client.from('cart').insert(item);
+    return checkError(resp);
+}
+
 export async function signupUser(email, password) {
     const response = await client.auth.signUp({ email, password });
 
