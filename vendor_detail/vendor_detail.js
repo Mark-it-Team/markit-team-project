@@ -17,7 +17,7 @@ homeBtn.addEventListener('click', () => {
 });
 
 shoppingBtn.addEventListener('click', () => {
-    location.replace(`./vendor_detail`);
+    location.replace(`../reserved`);
 });
 
 export async function displayDetails() {

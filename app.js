@@ -1,7 +1,6 @@
 import { fetchVendors, logout } from './fetch-utils.js';
 import { renderVendor } from './render-utils.js';
 
-
 const vendorContainer = document.getElementById('vendors-div');
 const signUpButton = document.getElementById('sign-up-button');
 const signInButton = document.getElementById('sign-in-button');
@@ -17,28 +16,22 @@ signInButton.addEventListener('click', () => {
 });
 
 shoppingBtn.addEventListener('click', () => {
-    location.replace(`./vendor_detail`);
+    location.replace(`./reserved`);
 });
 
 export async function displayVendors() {
     const vendors = await fetchVendors();
 
     for (let vendor of vendors) {
-
         const vendorEl = renderVendor(vendor);
         vendorEl.addEventListener('click', () => {
             location.replace(`./vendor_detail/?id=${vendor.id}`);
         });
         vendorContainer.append(vendorEl);
-
-
     }
 }
-
 
 logoutButton.addEventListener('click', () => {
     logout();
 });
 displayVendors();
-
-
