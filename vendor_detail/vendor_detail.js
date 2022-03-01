@@ -21,7 +21,6 @@ export async function displayDetails() {
     vendorContainer.append(renderVendorDetail(vendor));
 
     const products = await fetchProducts(data);
-    console.log(products);
     for (let product of products) {
         const productEl = renderProduct(product);
         productContainer.append(productEl);

@@ -1,7 +1,6 @@
 import { fetchVendors, logout } from './fetch-utils.js';
 import { renderVendor } from './render-utils.js';
 
-// fetchVendors();
 
 const vendorContainer = document.getElementById('vendors-div');
 const signUpButton = document.getElementById('sign-up-button');

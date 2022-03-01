@@ -21,7 +21,6 @@ export function redirectIfLoggedIn() {
 }
 export async function fetchVendorDetails(id) {
     const resp = await client.from('vendors').select().match({ id: id }).single();
-    console.log('Vendor Details', resp);
     return checkError(resp);
 }
 export async function fetchVendors() {
@@ -31,7 +30,6 @@ export async function fetchVendors() {
 
 export async function fetchProducts(id) {
     const resp = await client.from('products').select().match({ vendor_id: id });
-    console.log('resp', resp);
     return checkError(resp);
 }
 
