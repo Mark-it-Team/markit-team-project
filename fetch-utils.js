@@ -16,12 +16,20 @@ export function checkAuth() {
 
 export function redirectIfLoggedIn() {
     if (getUser()) {
-        location.replace('./other-page');
+        location.replace('/');
     }
 }
-
+export async function fetchVendorDetails(id) {
+    const resp = await client.from('vendors').select().match({ id: id }).single();
+    return checkError(resp);
+}
 export async function fetchVendors() {
     const resp = await client.from('vendors').select();
+    return checkError(resp);
+}
+
+export async function fetchProducts(id) {
+    const resp = await client.from('products').select().match({ vendor_id: id });
     return checkError(resp);
 }
 
