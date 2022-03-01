@@ -43,6 +43,14 @@ export async function fetchCart(id) {
     return checkError(resp);
 }
 
+export async function deleteFromCart(id) {
+    const resp = await client
+        .from('cart')
+        .delete()
+        .match({ product_id: id, customer_id: getUser().id });
+    return checkError(resp);
+}
+
 export async function signupUser(email, password) {
     const response = await client.auth.signUp({ email, password });
 
