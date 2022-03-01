@@ -35,12 +35,15 @@ header h1 {
 }
 
 #products-container {
+    margin: auto;
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 #products-container img {
-    width: 40%;
+    width: 180px;
 }
 
 .vendor:hover {
