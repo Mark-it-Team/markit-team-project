@@ -17,9 +17,8 @@ homeBtn.addEventListener('click', () => {
     return (window.location.href = '../index.html');
 });
 
-const vendors = await fetchVendors();
-
 async function displayCart() {
+    const vendors = await fetchVendors();
     cartContainer.textContent = '';
     for (let i = 1; i < vendors.length + 1; i++) {
         const vendorProducts = (await fetchCart(i));
