@@ -1,5 +1,5 @@
-import { logout, fetchCart } from '../fetch-utils.js';
-import { renderProduct } from '../render-utils.js';
+import { logout, fetchCart, fetchVendorDetails, fetchVendors } from '../fetch-utils.js';
+import { renderProduct, renderCartItem } from '../render-utils.js';
 
 const logoutButton = document.getElementById('logout');
 const cartContainer = document.getElementById('cart-display');
@@ -9,20 +9,15 @@ logoutButton.addEventListener('click', () => {
     logout();
 });
 
-export async function displayCart() {
-    const cart = await fetchCart();
-    cartContainer.append(renderProduct(cart));
+const vendors = await fetchVendors();
 
-    const products = await fetchProducts();
-    for (let product of products) {
-        const productEl = renderProduct(product);
-        productContainer.append(productEl);
-
-        const i = await fetchItems();
-        for (let item of items) {
-            const itemEl = renderItems(item);
-            productContainer.append(productEl);
+for (let i = 1; i < vendors.length + 1; i++) {
+    const vendorProducts = (await fetchCart(i));
+    for (let product of vendorProducts) {
+        const item = product.products;
+        if (item) {
+            const itemEl = renderCartItem(item);
+            cartContainer.append(itemEl);
         }
     }
 }
-displayCart();
