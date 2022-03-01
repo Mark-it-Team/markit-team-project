@@ -25,8 +25,10 @@ body {
     top: 90px;
 }
 
-img {
+#vendors-div img {
     width: 500px;
+    height: 280px;
+    object-fit: cover;
 }
 
 header h1 {
