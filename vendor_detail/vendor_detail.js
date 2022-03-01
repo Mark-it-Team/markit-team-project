@@ -6,6 +6,7 @@ const params = new URLSearchParams(window.location.search);
 const vendorContainer = document.getElementById('vendor-container');
 const productContainer = document.getElementById('products-container');
 const homeBtn = document.getElementById('home');
+const shoppingBtn = document.getElementById('shopping-button');
 
 logoutButton.addEventListener('click', () => {
     logout();
@@ -14,6 +15,11 @@ logoutButton.addEventListener('click', () => {
 homeBtn.addEventListener('click', () => {
     return (window.location.href = '../index.html');
 });
+
+shoppingBtn.addEventListener('click', () => {
+    location.replace(`./vendor_detail`);
+});
+
 
 export async function displayDetails() {
     const data = +params.get('id');
