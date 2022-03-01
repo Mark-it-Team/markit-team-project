@@ -1,9 +1,8 @@
 import { logout, 
-    fetchCart, 
-    fetchVendorDetails, 
+    fetchCart,
     fetchVendors,
     deleteFromCart } from '../fetch-utils.js';
-import { renderProduct, renderCartItem } from '../render-utils.js';
+import { renderCartItem } from '../render-utils.js';
 
 const logoutButton = document.getElementById('logout');
 const cartContainer = document.getElementById('cart-display');
@@ -27,7 +26,6 @@ async function displayCart() {
             if (item) {
                 const itemEl = renderCartItem(item);
                 itemEl.addEventListener('click', async () => {
-                    console.log(item.id);
                     await deleteFromCart(item.id);
                     displayCart();
                 });

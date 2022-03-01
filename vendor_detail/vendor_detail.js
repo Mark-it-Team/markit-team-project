@@ -31,7 +31,6 @@ export async function displayDetails() {
         productEl.addEventListener('click', async () => {
             const newItem = { customer_id: getUser().id, product_id: product.id };
             await addCart(newItem);
-            console.log('cart', newItem);
         });
         productContainer.append(productEl);
     }
