@@ -25,6 +25,12 @@ export async function fetchVendors() {
     return checkError(resp);
 }
 
+export async function fetchProducts(id) {
+    const resp = await client.from('products').select().match({ vendor_id: id });
+    console.log('resp', resp);
+    return checkError(resp);
+}
+
 export async function signupUser(email, password) {
     const response = await client.auth.signUp({ email, password });
 
