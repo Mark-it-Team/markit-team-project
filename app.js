@@ -6,6 +6,7 @@ const vendorContainer = document.getElementById('vendors-div');
 const signUpButton = document.getElementById('sign-up-button');
 const signInButton = document.getElementById('sign-in-button');
 const logoutButton = document.getElementById('logout');
+const shoppingBtn = document.getElementById('shopping-button');
 
 signUpButton.addEventListener('click', () => {
     location.replace(`./signup`);
@@ -14,6 +15,11 @@ signUpButton.addEventListener('click', () => {
 signInButton.addEventListener('click', () => {
     location.replace(`./signin`);
 });
+
+shoppingBtn.addEventListener('click', () => {
+    location.replace(`./vendor_detail`);
+});
+
 export async function displayVendors() {
     const vendors = await fetchVendors();
 
