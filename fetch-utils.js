@@ -19,6 +19,7 @@ export function redirectIfLoggedIn() {
         location.replace('/');
     }
 }
+
 export async function fetchVendorDetails(id) {
     const resp = await client.from('vendors').select().match({ id: id }).single();
     return checkError(resp);
@@ -38,7 +39,7 @@ export async function fetchCart(id) {
         .from('cart')
         .select(`product_id, products(*)`)
         .eq('products.vendor_id', id);
-    console.log('resp', resp);
+    // console.log('resp', resp);
     return checkError(resp);
 }
 
