@@ -33,6 +33,15 @@ export async function fetchProducts(id) {
     return checkError(resp);
 }
 
+export async function fetchCart(id) {
+    const resp = await client
+        .from('cart')
+        .select(`product_id, products(*)`)
+        .eq('products.vendor_id', id);
+    console.log('resp', resp);
+    return checkError(resp);
+}
+
 export async function signupUser(email, password) {
     const response = await client.auth.signUp({ email, password });
 
