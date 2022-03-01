@@ -1,16 +1,10 @@
 body {
-    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
-    /* --color1: hsla(349, 69%, 76%, 1);
-    --color2: hsla(207, 67%, 44%, 1);
-    --color3: hsla(200, 61%, 56%, 1);
-    --color4: hsla(187, 41%, 94%, 1);
-    --color5: hsla(170, 28%, 95%, 1); */
-
-    /* --color1: hsla(45, 86%, 83%, 1);
-    --color2: hsla(135, 65%, 98%, 1);
-    --color3: hsla(315, 37%, 86%, 1);
-    --color4: hsla(45, 73%, 98%, 1);
-    --color5: hsla(224, 40%, 79%, 1); */
+    /* CSS HSL */
+    --jet: hsla(60, 3%, 17%, 1);
+    --davys-grey: hsla(60, 3%, 29%, 1);
+    --cool-grey: hsla(220, 15%, 58%, 1);
+    --bittersweet-shimmer: hsla(355, 49%, 52%, 1);
+    --bone: hsla(43, 38%, 84%, 1);
     
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
@@ -19,6 +13,11 @@ body {
     
     font-family: 'Noto Sans', sans-serif;
     background-color: var(--color2);
+}
+
+body {
+    background-color: var(--bone);
+    color: var(--jet);
 }
 
 #logout {
@@ -44,6 +43,8 @@ header h1 {
 
 #products-container img {
     width: 180px;
+    height: 135px;
+    object-fit: cover;
 }
 
 .vendor:hover {
