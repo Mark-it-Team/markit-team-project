@@ -115,6 +115,15 @@ img {
     width: 500px;
 }
 
+#products-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#products-container img {
+    width: 40%;
+}
+
 .auth-main {
     display: flex;
     flex-direction: row;
