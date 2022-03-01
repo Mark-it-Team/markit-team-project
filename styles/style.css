@@ -53,6 +53,31 @@ header h1 {
     cursor: pointer;
 }
 
+#cart-display {
+    display: flex;
+    flex-direction: column;
+}
+
+#cart-display h2 {
+    font-size: 3rem;
+    margin: auto;
+}
+
+.product-row img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+}
+
+.product-row {
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 50px;
+}
+
 .auth-main {
     display: flex;
     flex-direction: row;
