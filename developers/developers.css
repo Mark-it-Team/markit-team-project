@@ -21,6 +21,9 @@
     height: 400px;
     /* width: 400px; */
     overflow: hidden;
+
+    width: 270px;
+  border: 20px solid rgba(63, 56, 56, 0.226);
 }
 
 .frog {
