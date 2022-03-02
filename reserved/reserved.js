@@ -1,7 +1,8 @@
 import { logout, 
     fetchCart,
     fetchVendors,
-    deleteFromCart } from '../fetch-utils.js';
+    deleteFromCart, 
+    checkAuth } from '../fetch-utils.js';
 import { renderCartItem } from '../render-utils.js';
 
 const logoutButton = document.getElementById('logout');
@@ -15,6 +16,8 @@ logoutButton.addEventListener('click', () => {
 homeBtn.addEventListener('click', () => {
     return (window.location.href = '../index.html');
 });
+
+checkAuth();
 
 async function displayCart() {
     const vendors = await fetchVendors();
