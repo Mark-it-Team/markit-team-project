@@ -28,6 +28,14 @@ shoppingBtn.addEventListener('click', () => {
     location.replace(`../reserved`);
 });
 
+if (!getUser()) {
+    logoutButton.classList.add('hidden');
+}
+
+if (getUser()) {
+    
+}
+
 export async function displayDetails() {
     productContainer.textContent = '';
     vendorContainer.textContent = '';

@@ -33,13 +33,16 @@ export async function fetchProducts(id) {
     const resp = await client.from('products').select().match({ vendor_id: id });
     return checkError(resp);
 }
+
 export async function fetchProductsByCart(id) {
     const resp = await client.from('products').select().match({ id: id });
     return checkError(resp);
 }
+
 export async function fetchCartInfo(id) {
     const resp = await client.from('cart').select().match({ customer_id: id });
     // console.log('info', resp);
+
     return checkError(resp);
 }
 
