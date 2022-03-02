@@ -6,6 +6,7 @@ const signUpButton = document.getElementById('sign-up-button');
 const signInButton = document.getElementById('sign-in-button');
 const logoutButton = document.getElementById('logout');
 const shoppingBtn = document.getElementById('shopping-button');
+const buttonsDiv = document.getElementById('buttons-div');
 
 signUpButton.addEventListener('click', () => {
     location.replace(`./signup`);
@@ -21,6 +22,11 @@ shoppingBtn.addEventListener('click', () => {
 
 if (!getUser()) {
     logoutButton.classList.add('hidden');
+}
+
+if (getUser()) {
+    buttonsDiv.classList.add('hidden');
+    console.log(getUser().aud);
 }
 
 export async function displayVendors() {
