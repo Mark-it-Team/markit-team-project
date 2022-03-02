@@ -1,8 +1,11 @@
-import { logout, 
+import {
+    logout,
     fetchCart,
     fetchVendors,
-    deleteFromCart, 
-    checkAuth } from '../fetch-utils.js';
+    deleteFromCart,
+    checkAuth,
+    fetchCartInfo,
+} from '../fetch-utils.js';
 import { renderCartItem } from '../render-utils.js';
 
 const logoutButton = document.getElementById('logout');
@@ -23,7 +26,7 @@ async function displayCart() {
     const vendors = await fetchVendors();
     cartContainer.textContent = '';
     for (let i = 1; i < vendors.length + 1; i++) {
-        const vendorProducts = (await fetchCart(i));
+        const vendorProducts = await fetchCart(i);
         for (let product of vendorProducts) {
             const item = product.products;
             if (item) {
@@ -39,3 +42,4 @@ async function displayCart() {
 }
 
 displayCart();
+fetchCartInfo();
