@@ -25,10 +25,10 @@ checkAuth();
 async function displayCart() {
     const vendors = await fetchVendors();
     cartContainer.textContent = '';
+
     for (let i = 1; i <= vendors.length; i++) {
 
         const vendorProducts = (await fetchCart(i));
-        console.log(vendorProducts, i);
 
         for (let product of vendorProducts) {
             const item = product.products;
@@ -37,7 +37,7 @@ async function displayCart() {
                 const h2 = document.createElement('h2');
 
                 div.classList.add('vendor-products-container');
-                h2.textContent = (vendors[i - 2].name);
+                h2.textContent = (vendors[i].name);
 
                 div.append(h2);
 

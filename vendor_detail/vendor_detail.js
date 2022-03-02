@@ -27,6 +27,14 @@ shoppingBtn.addEventListener('click', () => {
     location.replace(`../reserved`);
 });
 
+if (!getUser()) {
+    logoutButton.classList.add('hidden');
+}
+
+if (getUser()) {
+    
+}
+
 export async function displayDetails() {
     const data = +params.get('id');
     const vendor = await fetchVendorDetails(data);
