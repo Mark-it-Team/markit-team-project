@@ -24,7 +24,7 @@ export function renderVendorDetail(vendor) {
     p.textContent = vendor.description;
 
     div.append(h2, img, p);
-    return (div);
+    return div;
 }
 
 export function renderProduct(product) {
