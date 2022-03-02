@@ -22,10 +22,22 @@ checkAuth();
 async function displayCart() {
     const vendors = await fetchVendors();
     cartContainer.textContent = '';
-    for (let i = 1; i < vendors.length + 1; i++) {
+    for (let i = 1; i <= vendors.length; i++) {
+
         const vendorProducts = (await fetchCart(i));
+        console.log(vendorProducts, i);
+
         for (let product of vendorProducts) {
             const item = product.products;
+            if (item) {
+                console.log(vendors[i - 1].name, 'name');
+                break;
+            }
+        }
+
+        for (let product of vendorProducts) {
+            const item = product.products;
+        
             if (item) {
                 const itemEl = renderCartItem(item);
                 itemEl.addEventListener('click', async () => {
