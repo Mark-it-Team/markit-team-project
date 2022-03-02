@@ -1,0 +1,21 @@
+html,
+body {
+  height: 100%;
+}
+
+.mydiv {
+  width:100%;
+  height:100%;
+  color:black;
+  font-weight:bold;
+  animation: myanimation 25s infinite;
+  transition-timing-function: ease-in-out;
+}
+
+@keyframes myanimation {
+  0% {background-color: #c14953ff;}
+  25%{background-color:#e5dcc5ff;}
+  50%{background-color:#008bf8ff;}
+  75%{background-color:#dc0073ff;}
+  100% {background-color: #aaa694ff;}
+}
