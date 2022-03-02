@@ -19,6 +19,7 @@ export function redirectIfLoggedIn() {
         location.replace('/');
     }
 }
+
 export async function fetchVendorDetails(id) {
     const resp = await client.from('vendors').select().match({ id: id }).single();
     return checkError(resp);
@@ -30,6 +31,28 @@ export async function fetchVendors() {
 
 export async function fetchProducts(id) {
     const resp = await client.from('products').select().match({ vendor_id: id });
+    return checkError(resp);
+}
+
+export async function fetchCart(id) {
+    const resp = await client
+        .from('cart')
+        .select(`product_id, products(*)`)
+        .eq('products.vendor_id', id);
+    // console.log('resp', resp);
+    return checkError(resp);
+}
+
+export async function deleteFromCart(id) {
+    const resp = await client
+        .from('cart')
+        .delete()
+        .match({ product_id: id, customer_id: getUser().id });
+    return checkError(resp);
+}
+
+export async function addCart(item) {
+    const resp = await client.from('cart').insert(item);
     return checkError(resp);
 }
 

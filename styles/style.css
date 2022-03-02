@@ -1,16 +1,10 @@
 body {
-    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
-    /* --color1: hsla(349, 69%, 76%, 1);
-    --color2: hsla(207, 67%, 44%, 1);
-    --color3: hsla(200, 61%, 56%, 1);
-    --color4: hsla(187, 41%, 94%, 1);
-    --color5: hsla(170, 28%, 95%, 1); */
-
-    /* --color1: hsla(45, 86%, 83%, 1);
-    --color2: hsla(135, 65%, 98%, 1);
-    --color3: hsla(315, 37%, 86%, 1);
-    --color4: hsla(45, 73%, 98%, 1);
-    --color5: hsla(224, 40%, 79%, 1); */
+    /* CSS HSL */
+    --jet: hsla(60, 3%, 17%, 1);
+    --davys-grey: hsla(60, 3%, 29%, 1);
+    --cool-grey: hsla(220, 15%, 58%, 1);
+    --bittersweet-shimmer: hsla(355, 49%, 52%, 1);
+    --bone: hsla(43, 38%, 90%, 1);
     
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
@@ -21,30 +15,153 @@ body {
     background-color: var(--color2);
 }
 
+body {
+    background-color: var(--bone);
+    color: var(--jet);
+}
+
 #logout {
     right: 20px;
     top: 90px;
 }
 
-img {
+#vendors-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+#vendors-div img {
     width: 500px;
+    height: 280px;
+    object-fit: cover;
+}
+
+header {
+    width: 100vw;
+    position: relative;
+    top: -25px;
+    border-bottom: 1px solid var(--jet);
+    box-shadow: 0 4px 2px -2px gray;
 }
 
 header h1 {
     font-size: 3rem;
+    margin: 0px;
+    text-align: center;
+    background-color: var(--bittersweet-shimmer);
+    color: var(--bone);
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#logout {
+    font-size: 0.8rem;
+    padding: 3px;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+}
+
+.hidden {
+    display: none;
 }
 
 #products-container {
+    margin: auto;
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 #products-container img {
-    width: 40%;
+    width: 180px;
+    height: 135px;
+    object-fit: cover;
+}
+
+.vendor {
+    position: relative;
+    color: white;
+    font-weight: 900;
+    font-size: 2rem;
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+    margin: 10px;
+}
+
+.vendor p {
+    position: absolute;
+    top: -5px;
+    left: 20px;
+    background-color: hsla(60, 3%, 17%, 0.5);
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 10px;
 }
 
 .vendor:hover {
     cursor: pointer;
+
+}
+
+.check {
+    font-size: 4rem;
+    color: var(--jet);
+}
+
+#cart-display {
+    display: flex;
+    flex-direction: column;
+}
+
+#cart-display h2 {
+    font-size: 3rem;
+    margin: auto;
+}
+
+button {
+    background-color: white;
+    border: 3px solid var(--cool-grey);
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    color: var(--bittersweet-shimmer);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsla(220, 15%, 58%, 0.4);
+    color: hsla(355, 49%, 32%, 1);
+    border: 3px solid hsla(220, 15%, 48%, 1);
+}
+
+#buttons-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px;
+    padding: 0px 20px 20px 20px;
+    align-items: center;
+}
+
+.product-row img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+}
+
+.product-row {
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 50px;
 }
 
 .auth-main {
@@ -65,3 +182,8 @@ header h1 {
 .auth-container button {
     margin: 10px;
 }
+
+p{
+    text-align: center;
+    font-weight: bold;
+    }

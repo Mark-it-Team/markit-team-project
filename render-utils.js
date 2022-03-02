@@ -40,3 +40,19 @@ export function renderProduct(product) {
 
     return div;
 }
+
+export function renderCartItem(item) {
+    const div = document.createElement('div');
+    const img = document.createElement('img');
+    const p1 = document.createElement('p');
+    const p2 = document.createElement('p2');
+
+    div.classList.add('product-row');
+    img.setAttribute('src', item.image);
+    p1.textContent = item.name;
+    p2.textContent = item.price;
+
+    div.append(img, p1, p2);
+
+    return div;
+}
