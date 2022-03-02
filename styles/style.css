@@ -63,6 +63,24 @@ header h1 {
     margin: auto;
 }
 
+button {
+    background-color: white;
+    border: 3px solid var(--cool-grey);
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    color: var(--bittersweet-shimmer);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsla(220, 15%, 58%, 0.4);
+    color: hsla(355, 49%, 32%, 1);
+    border: 3px solid hsla(220, 15%, 48%, 1);
+}
+
 .product-row img {
     width: 75px;
     height: 75px;
