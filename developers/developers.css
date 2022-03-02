@@ -16,14 +16,29 @@
         'per-3-bio . . per-4-bio . . per-5-bio';
 }
 
+body {
+    background-image: url(../assets/wallpaper.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    
+    background-size: cover;
+   
+    align-content: flex-start;
+    position: relative;
+    color: white;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
 .container img{
     border-radius: 90%;
     height: 400px;
     /* width: 400px; */
     overflow: hidden;
-
+/* 
     width: 270px;
-  border: 20px solid rgba(63, 56, 56, 0.226);
+  border: 20px solid rgba(63, 56, 56, 0.226); */
+  
 }
 
 .frog {
