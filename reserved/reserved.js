@@ -34,12 +34,12 @@ async function displayCart() {
                 const h2 = document.createElement('h2');
 
                 div.classList.add('vendor-products-container');
-                h2.textContent = (vendors[i - 1].name);
+                h2.textContent = (vendors[i - 2].name);
 
                 div.append(h2);
 
                 cartContainer.append(div);
-                
+
                 break;
             }
         }
