@@ -30,7 +30,16 @@ async function displayCart() {
         for (let product of vendorProducts) {
             const item = product.products;
             if (item) {
-                console.log(vendors[i - 1].name, 'name');
+                const div = document.createElement('div');
+                const h2 = document.createElement('h2');
+
+                div.classList.add('vendor-products-container');
+                h2.textContent = (vendors[i - 2].name);
+
+                div.append(h2);
+
+                cartContainer.append(div);
+
                 break;
             }
         }
