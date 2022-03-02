@@ -3,7 +3,7 @@ body {
   height: 100%;
 }
 
-.mydiv {
+.auth-container {
   width:100%;
   height:100%;
   color:black;
@@ -18,4 +18,16 @@ body {
   50%{background-color:#008bf8ff;}
   75%{background-color:#dc0073ff;}
   100% {background-color: #aaa694ff;}
+}
+
+h3{
+    text-align: center;
+}
+form{
+
+    box-shadow: 5px 5px grey;
+    width: 95%;
+    margin:10px;
+    background-color: #E0D8D6;
+    position: absolute; top: 200px;
 }
