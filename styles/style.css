@@ -115,6 +115,8 @@ header h1 {
 #cart-display {
     display: flex;
     flex-direction: column;
+    background-color: aliceblue;
+    max-width: 700px;
 }
 
 #cart-display h2 {
