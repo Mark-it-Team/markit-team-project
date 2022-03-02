@@ -1,4 +1,11 @@
-import { logout, fetchProducts, fetchVendorDetails, addCart, getUser } from '../fetch-utils.js';
+import {
+    logout,
+    fetchProducts,
+    fetchVendorDetails,
+    addCart,
+    getUser,
+    fetchCartInfo,
+} from '../fetch-utils.js';
 import { renderProduct, renderVendorDetail } from '../render-utils.js';
 
 const logoutButton = document.getElementById('logout');

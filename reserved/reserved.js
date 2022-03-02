@@ -1,8 +1,11 @@
-import { logout, 
+import {
+    logout,
     fetchCart,
     fetchVendors,
-    deleteFromCart, 
-    checkAuth } from '../fetch-utils.js';
+    deleteFromCart,
+    checkAuth,
+    fetchCartInfo,
+} from '../fetch-utils.js';
 import { renderCartItem } from '../render-utils.js';
 
 const logoutButton = document.getElementById('logout');
@@ -60,3 +63,4 @@ async function displayCart() {
 }
 
 displayCart();
+fetchCartInfo();
