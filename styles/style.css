@@ -61,13 +61,6 @@ header h1 {
     display: none;
 }
 
-#vendor-container img {
-    width: 100%;
-    max-width: 700px;
-    display: block;
-    margin: auto;
-}
-
 .detail-container h2 {
     font-family: 'Noto Serif Display', serif;
     font-size: 3rem;
