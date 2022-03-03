@@ -41,10 +41,11 @@
 }
 
 .grid figure figcaption {
-    padding: 2px;
+    padding-top: 15px;
     /* text-transform: uppercase; */
     font-size: 20px;
-    color: hsla(355, 49%, 52%, 1);
+    font-weight: 300;
+    color: hsla(43, 38%, 90%, 1);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     font-family: 'Noto Serif Display', serif;
@@ -142,10 +143,12 @@ figure.vendor-effect figcaption::after {
 }
 
 figure.vendor-effect h2 {
-    padding-top: 10%;
+    padding-top: 23%;
+    padding-left: 20%;
     -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
     font-size: 30px;
+    /* font-weight: 500px; */
     padding-right: 20%;
     /* background-color: hsla(60, 3%, 29%, 0.6); */
     /* padding-bottom: 20%; */
