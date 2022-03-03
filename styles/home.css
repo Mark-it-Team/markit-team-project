@@ -22,13 +22,12 @@
 .grid {
     position: relative;
     margin: 0 auto;
-    padding: 1em 0 4em;
+    padding: 1em 0 1em;
     max-width: 1000px;
     list-style: none;
     text-align: center;
 }
 
-/* Common style */
 .grid figure {
     position: relative;
     float: left;
@@ -40,6 +39,7 @@
     width: 48%;
     text-align: center;
     cursor: pointer;
+    justify-content: space-between;
 }
 
 .grid figure img {
@@ -48,13 +48,13 @@
     min-height: 100%;
     max-width: 100%;
     opacity: 0.8;
+    justify-content: space-between;
 }
 
 .grid figure figcaption {
-    padding: 5px;
-    color: #fff;
+    padding: 2px;
     text-transform: uppercase;
-    font-size: 1.25em;
+    font-size: 10px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
@@ -105,17 +105,19 @@
 figure.vendor-effect {
     /* background: #18a367; */
 
-    background-color: hsla(220, 15%, 58%, 0.4);
+    background-color: hsla(220, 15%, 58%, 0.2);
     align-items: center;
     justify-content: center;
     object-fit: contain;
-    height: 430px;
-    width: 650px;
+    height: 400px;
+    width: 600px;
     border-radius: 8px;
+    border: solid black;
 }
 figure.vendor-effect img {
     height: 190px;
     border-radius: 8px;
+    border: solid hsla(355, 49%, 52%, 1);
 }
 /* 
 figure.vendor-effect figcaption {
@@ -131,16 +133,16 @@ figure.vendor-effect figcaption::after {
 
 figure.vendor-effect figcaption::before {
     margin-top: 10%;
-    margin-right: 10%;
+    margin-right: 25%;
     margin-left: 30%;
     margin-bottom: 10%;
     top: 50px;
-    right: 30px;
+    right: 60px;
     bottom: 50px;
     left: 30px;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    -webkit-transform: scale(0, 1);
+    border-top: 0.5px solid black;
+    border-bottom: 0.5px solid;
+    -webkit-transform: scale(0, 0);
     transform: scale(0, 1);
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0;
@@ -151,8 +153,8 @@ figure.vendor-effect figcaption::after {
     right: 500px;
     bottom: 20px;
     left: 550px;
-    border-right: 1px solid #fff;
-    border-left: 1px solid #fff;
+    border-right: 0.5px solid #fff;
+    border-left: 0.5px solid #fff;
     -webkit-transform: scale(1, 0);
     transform: scale(1, 0);
     -webkit-transform-origin: 100% 0;
@@ -171,6 +173,7 @@ figure.vendor-effect p {
     opacity: 0;
     -webkit-transform: translate3d(0, -10px, 0);
     transform: translate3d(0, -10px, 0);
+    font-size: 12px;
 }
 
 figure.vendor-effect img,
