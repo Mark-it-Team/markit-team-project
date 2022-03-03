@@ -23,20 +23,28 @@ body {
         text-align: center;
     }
 
-   img{
+   header{
        max-width:100%;
    }
+   img{
+       height:200px;
+       
+   }
     .form-div{
+        display:flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         box-sizing: border-box;
         width:50%;
         box-shadow: 5px 5px grey;
-        margin: 75px 100px 100px;
-        padding:30px;
         background-color: #E0D8D6;
-        position: relative; top: 100px;
         border: 2px black solid;
+        position: relative;
+        left: 50%;
+        margin-left: -400px;
+        top: 50%;
+        margin-top: 200px;
+        margin-bottom: 300px;
     }
   }
