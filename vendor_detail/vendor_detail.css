@@ -112,6 +112,7 @@ span h1 {
 
     .detail-container img {
         width: 100%;
+        max-width: 900px;
     }
 
     #products-container {
