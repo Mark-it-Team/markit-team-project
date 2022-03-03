@@ -6,6 +6,7 @@ body {
   font-weight:bold;
   animation: myanimation 25s infinite;
   transition-timing-function: ease-in-out;
+  box-sizing:border-box; 
 }
 
 
@@ -18,16 +19,19 @@ body {
 }
 
 /* On screens that are 992px or less */
-@media screen and (min-width: 1400px) {
-    h3{
+/* @media screen and (min-width: 1400px) { */
+    h3 {
         text-align: center;
     }
 
-   header{
-      max-width:100%;
+   header {
+       max-width:100%;
    }
-    .form-div{
-        width:50%;
+
+    .form-div {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
         box-sizing: border-box;
         box-shadow: 5px 5px grey;
@@ -41,4 +45,4 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
     }
-  }
+  
