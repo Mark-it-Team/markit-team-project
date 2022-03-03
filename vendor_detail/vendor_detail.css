@@ -107,13 +107,13 @@ span h1 {
 @media only screen and (min-width: 800px) {
     #main-section {
 
-        display: grid; 
-        grid-template-columns: 1.3fr 0.7fr; 
-        grid-template-rows: 1.2fr 0.8fr; 
-        gap: 0px 0px; 
-        grid-template-areas: 
-          ". ."
-          ". ."; 
+        display: grid;
+        grid-template-columns: 1.3fr 0.7fr;
+        grid-template-rows: 1.2fr 0.8fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            ". ."
+            ". .";
         grid-gap: 2rem;
     }
 

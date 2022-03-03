@@ -17,6 +17,7 @@ const shoppingBtn = document.getElementById('shopping-button');
 const authButtons = document.getElementById('auth-buttons');
 const signUpButton = document.getElementById('sign-up-button');
 const signInButton = document.getElementById('sign-in-button');
+const data = +params.get('id');
 
 const user = getUser();
 logoutButton.addEventListener('click', () => {
@@ -47,12 +48,14 @@ if (getUser()) {
     authButtons.classList.add('hidden');
 }
 
-async function displayDetails() {
-    productContainer.textContent = '';
+async function displayVendor() {
     vendorContainer.textContent = '';
-    const data = +params.get('id');
+
     const vendor = await fetchVendorDetails(data);
     vendorContainer.append(renderVendorDetail(vendor));
+}
+async function displayDetails() {
+    productContainer.textContent = '';
 
     const products = await fetchProducts(data);
     for (let product of products) {
@@ -71,7 +74,7 @@ async function displayDetails() {
         }
     }
 }
-
+displayVendor();
 displayDetails();
 
 async function greyScale(el, productId) {
