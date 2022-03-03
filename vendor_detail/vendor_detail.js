@@ -48,7 +48,10 @@ export async function displayDetails() {
         });
         const pId = { product_id: product.id };
         productContainer.append(productEl);
-        await greyScale(productEl, pId);
+        const user = getUser();
+        if (user) {
+            await greyScale(productEl, pId);
+        }
     }
 }
 
