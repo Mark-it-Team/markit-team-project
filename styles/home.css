@@ -14,7 +14,7 @@
     max-width: 1000px;
     list-style: none;
     text-align: center;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Serif Display', serif;
 }
 
 .grid figure {
@@ -25,7 +25,7 @@
     min-width: 320px;
     max-width: 480px;
     max-height: 360px;
-    width: 48%;
+    /* width: 48%; */
     text-align: center;
     cursor: pointer;
     justify-content: space-between;
@@ -42,12 +42,12 @@
 
 .grid figure figcaption {
     padding: 2px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 20px;
     color: black;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Serif Display', serif;
 }
 
 .grid figure figcaption::before,
@@ -56,7 +56,7 @@
 }
 
 .grid figure figcaption,
-.grid figure figcaption>a {
+.grid figure figcaption > a {
     position: absolute;
     top: 0;
     left: 0;
@@ -66,7 +66,7 @@
 
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */
-.grid figure figcaption>a {
+.grid figure figcaption > a {
     z-index: 1000;
     text-indent: 200%;
     white-space: nowrap;
@@ -77,7 +77,7 @@
 .grid figure h2 {
     word-spacing: -0.15em;
     font-weight: 300;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Serif Display', serif;
 }
 
 .grid figure h2 span {
@@ -91,8 +91,8 @@
 
 .grid figure p {
     letter-spacing: 1px;
-    font-size: 68.5%;
-    font-family: 'Noto Sans', sans-serif;
+    font-size: 80%;
+    font-family: 'Noto Serif Display', serif;
 }
 
 figure.vendor-effect {
@@ -105,7 +105,7 @@ figure.vendor-effect img {
 }
 
 figure.vendor-effect figcaption {
-    padding: 3em;
+    padding: 10px;
 }
 
 figure.vendor-effect figcaption::before,
@@ -116,10 +116,10 @@ figure.vendor-effect figcaption::after {
 }
 
 figure.vendor-effect figcaption::before {
-    top: 50px;
-    right: 50px;
+    top: 80px;
+    right: 20px;
     bottom: 80px;
-    left: 30px;
+    left: 20px;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
     -webkit-transform: scale(0, 1);
@@ -129,10 +129,10 @@ figure.vendor-effect figcaption::before {
 }
 
 figure.vendor-effect figcaption::after {
-    top: 30px;
+    top: 50px;
     right: 50px;
-    bottom: 30px;
-    left: 50px;
+    bottom: 50px;
+    left: 30px;
     border-right: 1px solid #fff;
     border-left: 1px solid #fff;
     -webkit-transform: scale(1, 0);
@@ -147,6 +147,7 @@ figure.vendor-effect h2 {
     transition: transform 0.35s;
     font-size: 30px;
     padding-right: 20%;
+    /* background-color: hsla(60, 3%, 29%, 0.6); */
     /* padding-bottom: 20%; */
 }
 
@@ -156,7 +157,7 @@ figure.vendor-effect p {
     opacity: 0;
     -webkit-transform: translate3d(0, -10px, 0);
     transform: translate3d(0, -10px, 0);
-    font-size: 10px;
+    font-size: 13px;
     padding-right: 20%;
     padding-bottom: 10%;
 }
@@ -164,7 +165,7 @@ figure.vendor-effect p {
 figure.vendor-effect img,
 figure.vendor-effect h2 {
     -webkit-transform: translate3d(0, -30px, 0);
-    transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, 70px, 0);
 }
 
 figure.vendor-effect img,
