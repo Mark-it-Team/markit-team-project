@@ -223,9 +223,10 @@ p {
 }
 
 .main-footer {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 23%;
+    padding-top: 20px;
     padding-right: 50%;
 }
