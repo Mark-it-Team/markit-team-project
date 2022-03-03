@@ -107,7 +107,7 @@ figure.vendor-effect {
 }
 
 figure.vendor-effect img {
-    height: 390px;
+    min-height: 100%;
 }
 
 figure.vendor-effect figcaption {
