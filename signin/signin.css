@@ -27,19 +27,18 @@ body {
       max-width:100%;
    }
     .form-div{
-      
+        width:50%;
         align-items: center;
         box-sizing: border-box;
-        width:50%;
         box-shadow: 5px 5px grey;
         background-color: #E0D8D6;
         border: 2px black solid;
-        position: relative;
         left: 50%;
         margin-left: -600px;
         margin-right:auto;
-        top: 50%;
-        margin-top: 200px;
-        margin-bottom: 100px;
+        position: fixed;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
   }
