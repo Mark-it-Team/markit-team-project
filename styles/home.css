@@ -93,7 +93,8 @@
 .grid figure p {
     letter-spacing: 1px;
     font-size: 80%;
-    font-family: 'Noto Serif Display', serif;
+    font-family: 'Noto Sans', serif;
+    font-weight: 100;
 }
 
 figure.vendor-effect {
