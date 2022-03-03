@@ -15,7 +15,7 @@
 }
 
 .column#caption .text {
-    position: absolute;		
+    position: absolute;
     top: -50px;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -31,17 +31,17 @@
     padding: 10px;
 }
 
-.column#caption .text h1 {		
-    margin: 0;		
+.column#caption .text h1 {
+    margin: 0;
     color: white;
 }
 
 .column#caption:hover .text {
-	opacity: 1;
+    opacity: 1;
 }
 
 .column#caption:hover img {
-	-webkit-filter: sepia(10%);
+    -webkit-filter: sepia(10%);
 }
 
 span h1 {
@@ -53,12 +53,12 @@ span h1 {
 
 @media only screen and (min-width: 800px) {
     #main-section {
-        display: grid; 
-        grid-template-columns: 1.3fr 0.7fr; 
-        grid-template-rows: 1.2fr 0.8fr; 
-        gap: 0px 0px; 
-        grid-template-areas: 
-          ". ."
-          ". ."; 
+        display: grid;
+        grid-template-columns: 1.3fr 0.7fr;
+        grid-template-rows: 1.2fr 0.8fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            ". ."
+            ". .";
     }
 }
