@@ -113,6 +113,7 @@ figure.vendor-effect {
     width: 600px;
     border-radius: 8px;
     border: solid black;
+    margin-bottom: 50px;
 }
 figure.vendor-effect img {
     height: 190px;
@@ -155,6 +156,8 @@ figure.vendor-effect figcaption::after {
     left: 550px;
     border-right: 0.5px solid #fff;
     border-left: 0.5px solid #fff;
+    /* border-top: 0.5px solid black; */
+    /* border-bottom: 0.5px solid; */
     -webkit-transform: scale(1, 0);
     transform: scale(1, 0);
     -webkit-transform-origin: 100% 0;
