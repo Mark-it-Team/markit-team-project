@@ -25,12 +25,21 @@ export async function fetchVendorDetails(id) {
     return checkError(resp);
 }
 export async function fetchVendors() {
-    const resp = await client.from('vendors').select();
+    const resp = await client.from('vendors').select().order('id', { ascending: true });
     return checkError(resp);
 }
 
 export async function fetchProducts(id) {
     const resp = await client.from('products').select().match({ vendor_id: id });
+    return checkError(resp);
+}
+export async function fetchProductsByCart(id) {
+    const resp = await client.from('products').select().match({ id: id });
+    return checkError(resp);
+}
+export async function fetchCartInfo(id) {
+    const resp = await client.from('cart').select().match({ customer_id: id });
+    // console.log('info', resp);
     return checkError(resp);
 }
 

@@ -1,3 +1,7 @@
 #shopping-button img {
     height: 40px;
 }
+
+.in-cart {
+    filter: grayscale();
+}

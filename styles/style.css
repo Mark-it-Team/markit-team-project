@@ -13,11 +13,8 @@ body {
     
     font-family: 'Noto Sans', sans-serif;
     background-color: var(--color2);
-}
-
-body {
     background-color: var(--bone);
-    color: var(--jet);
+    color: var(--davys-grey);
 }
 
 #logout {
@@ -53,19 +50,36 @@ header h1 {
     background-color: var(--bittersweet-shimmer);
     color: var(--bone);
     padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 
 #logout {
     font-size: 0.8rem;
     padding: 3px;
-    position: absolute;
-    top: 70px;
-    right: 10px;
 }
 
 .hidden {
     display: none;
+}
+
+#vendor-container img {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: auto;
+}
+
+.detail-container h2 {
+    font-family: 'Noto Serif Display', serif;
+    font-size: 3rem;
+    margin-left: 20px;
+    margin-block-start: 10px;
+}
+
+.detail-container p {
+    margin: 20px;
+    padding: 10px 40px;
+    font-weight: 100;
 }
 
 #products-container {
@@ -82,12 +96,17 @@ header h1 {
     object-fit: cover;
 }
 
+
+.product p {
+    font-family: 'Noto Serif Display', serif;
+}
+
 .vendor {
     position: relative;
     color: white;
     font-weight: 900;
     font-size: 2rem;
-    font-family: 'Noto Serif', serif;
+    font-family: 'Noto Serif Display', serif;
     text-align: center;
     margin: 10px;
 }
@@ -113,13 +132,31 @@ header h1 {
 }
 
 #cart-display {
+    width: 90%;
     display: flex;
     flex-direction: column;
+    background-color: white;
+    max-width: 700px;
+    justify-content: center;
+    margin: auto;
+    border: 3px solid var(--cool-grey);
+    border-radius: 5px;
+    padding-bottom: 30px;
 }
 
 #cart-display h2 {
-    font-size: 3rem;
-    margin: auto;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Noto Serif Display', serif;
+}
+
+#cart-display p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+#cart-display img {
+    border-radius: 10px;
 }
 
 button {
@@ -129,7 +166,7 @@ button {
     font-weight: 700;
     color: var(--bittersweet-shimmer);
     border-radius: 10px;
-    padding: 10px;
+    padding: 5px 10px;
     margin: 5px;
 }
 
@@ -141,12 +178,15 @@ button:hover {
 }
 
 #buttons-div {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0px;
     padding: 0px 20px 20px 20px;
     align-items: center;
+    position: absolute;
+    top: 70px;
 }
 
 .product-row img {

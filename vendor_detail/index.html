@@ -16,20 +16,24 @@
         <link rel="stylesheet" href="../styles/reset.css" />
         <link rel="stylesheet" href="../styles/style.css" />
         <link rel="stylesheet" href="../styles/home.css" />
+        <link rel="stylesheet" href="./vendor_detail.css">
         <title>Vendor Detail Page</title>
     </head>
     <body>
         <header>
             <h1>mark<span class="check">✓</span>it</h1>
-            <button id="logout">LogOut</button>
+            <div id="buttons-div-vendor-detail">
+                <button id="shopping-button">
+                    <img src="../assets/shopping_cart.jpg">
+                </button>
+                <button id="home">Back to the Market!</button>
+                <button id="logout">LogOut</button>
+            </div>
         </header>
         <main>
-            <button id="home">Back to the Market!</button>
-            <button id="shopping-button">
-                <img src="../assets/shopping_cart.jpg">
-            </button>
             <section id="vendor-container"></section>
-            <section id="products-container"></section>
+            <section id="products-container">
+            </section>
         </main>
         <script type="module" src="./vendor_detail.js"></script>
     </body>
