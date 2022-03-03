@@ -56,7 +56,7 @@
 }
 
 .grid figure figcaption,
-.grid figure figcaption>a {
+.grid figure figcaption > a {
     position: absolute;
     top: 0;
     left: 0;
@@ -66,7 +66,7 @@
 
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */
-.grid figure figcaption>a {
+.grid figure figcaption > a {
     z-index: 1000;
     text-indent: 200%;
     white-space: nowrap;
@@ -105,7 +105,7 @@ figure.vendor-effect img {
 }
 
 figure.vendor-effect figcaption {
-    padding: 3em;
+    padding: 10px;
 }
 
 figure.vendor-effect figcaption::before,
@@ -116,10 +116,10 @@ figure.vendor-effect figcaption::after {
 }
 
 figure.vendor-effect figcaption::before {
-    top: 50px;
-    right: 50px;
+    top: 80px;
+    right: 20px;
     bottom: 80px;
-    left: 30px;
+    left: 20px;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
     -webkit-transform: scale(0, 1);
@@ -129,10 +129,10 @@ figure.vendor-effect figcaption::before {
 }
 
 figure.vendor-effect figcaption::after {
-    top: 30px;
+    top: 50px;
     right: 50px;
-    bottom: 30px;
-    left: 50px;
+    bottom: 50px;
+    left: 30px;
     border-right: 1px solid #fff;
     border-left: 1px solid #fff;
     -webkit-transform: scale(1, 0);
