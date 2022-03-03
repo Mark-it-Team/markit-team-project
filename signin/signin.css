@@ -1,6 +1,7 @@
 html,
 body {
   width:100%;
+  margin:0;
   height:100%;
   color:black;
   font-weight:bold;
@@ -24,25 +25,19 @@ body {
         text-align: center;
     }
 
-   header {
-       max-width:100%;
+   header img {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    max-width:100%;
    }
 
     .form-div {
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        box-sizing: border-box;
-        box-shadow: 5px 5px grey;
-        background-color: #E0D8D6;
-        border: 2px black solid;
-        left: 50%;
-        margin-left: -600px;
-        margin-right:auto;
-        position: fixed;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+      flex-direction: column;
+      background-color: #E0D8D6;
+      border: 2px black solid;
+      position: fixed;		
+      top: 60%;
+      left: 40%;
+      transform: translate(-50%, -50%);
     }
   
