@@ -95,6 +95,10 @@ header h1 {
     object-fit: cover;
 }
 
+.select-message {
+    font-weight: 100;
+}
+
 .product p {
     font-family: 'Noto Serif Display', serif;
 }

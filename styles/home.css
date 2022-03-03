@@ -6,19 +6,6 @@
     filter: grayscale();
 }
 
-#shopping-button img {
-    height: 40px;
-}
-
-.in-cart {
-    filter: grayscale();
-    border: blue 2px dotted;
-}
-
-.in-cart:hover {
-    cursor: not-allowed;
-}
-
 .grid {
     position: relative;
     margin: 0 auto;
