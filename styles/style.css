@@ -13,11 +13,8 @@ body {
     
     font-family: 'Noto Sans', sans-serif;
     background-color: var(--color2);
-}
-
-body {
     background-color: var(--bone);
-    color: var(--jet);
+    color: var(--davys-grey);
 }
 
 #logout {
@@ -65,6 +62,10 @@ header h1 {
     display: none;
 }
 
+#vendor-container img {
+    width: 100%;
+}
+
 #products-container {
     margin: auto;
     display: flex;
@@ -79,12 +80,25 @@ header h1 {
     object-fit: cover;
 }
 
+.detail-container h2 {
+    font-family: 'Noto Serif Display', serif;
+    font-size: 3rem;
+}
+
+.detail-container p {
+    font-weight: 100;
+}
+
+.product p {
+    font-family: 'Noto Serif Display', serif;
+}
+
 .vendor {
     position: relative;
     color: white;
     font-weight: 900;
     font-size: 2rem;
-    font-family: 'Noto Serif', serif;
+    font-family: 'Noto Serif Display', serif;
     text-align: center;
     margin: 10px;
 }
@@ -119,12 +133,13 @@ header h1 {
     margin: auto;
     border: 3px solid var(--cool-grey);
     border-radius: 5px;
+    padding-bottom: 30px;
 }
 
 #cart-display h2 {
     font-size: 2rem;
     text-align: center;
-
+    font-family: 'Noto Serif Display', serif;
 }
 
 #cart-display p {
