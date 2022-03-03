@@ -157,7 +157,7 @@ button {
     background-color: white;
     border: 3px solid var(--cool-grey);
     font-family: 'Noto Sans', sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     color: var(--bittersweet-shimmer);
     border-radius: 10px;
     padding: 5px 10px;
@@ -166,7 +166,7 @@ button {
 
 button:hover {
     cursor: pointer;
-    background-color: hsla(220, 15%, 58%, 0.4);
+    background-color: hsla(220, 15%, 58%, 0.8);
     color: hsla(355, 49%, 32%, 1);
     border: 3px solid hsla(220, 15%, 48%, 1);
 }
