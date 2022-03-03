@@ -1,0 +1,52 @@
+#buttons-div-vendor-detail {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px 20px 20px 20px;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+}
+
+.column#caption {
+    position: relative;
+}
+
+.column#caption .text {
+    position: absolute;		
+    top: -50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+
+.text {
+    width: 80%;
+    background-color: hsla(0, 0%, 0%, 0.3);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.column#caption .text h1 {		
+    margin: 0;		
+    color: white;
+}
+
+.column#caption:hover .text {
+	opacity: 1;
+}
+
+.column#caption:hover img {
+	-webkit-filter: sepia(10%);
+}
+
+span h1 {
+    font-size: 0.8rem;
+    font-weight: 300;
+    width: 100%;
+    font-family: 'Noto Serif Display';
+}
