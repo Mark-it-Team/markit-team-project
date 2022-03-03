@@ -13,6 +13,7 @@
     max-width: 1000px;
     list-style: none;
     text-align: center;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .grid figure {
@@ -34,7 +35,7 @@
     display: block;
     min-height: 100%;
     max-width: 100%;
-    opacity: 0.8;
+    opacity: 0.9;
     justify-content: space-between;
 }
 
@@ -42,9 +43,10 @@
     padding: 2px;
     text-transform: uppercase;
     font-size: 20px;
-    color: whitesmoke;
+    color: black;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .grid figure figcaption::before,
@@ -74,6 +76,7 @@
 .grid figure h2 {
     word-spacing: -0.15em;
     font-weight: 300;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .grid figure h2 span {
@@ -88,6 +91,7 @@
 .grid figure p {
     letter-spacing: 1px;
     font-size: 68.5%;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 figure.vendor-effect {
