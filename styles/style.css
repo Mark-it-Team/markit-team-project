@@ -73,6 +73,7 @@ header h1 {
     font-family: 'Noto Serif Display', serif;
     font-size: 3rem;
     margin-left: 20px;
+    margin-block-start: 10px;
 }
 
 .detail-container p {
