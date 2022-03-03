@@ -37,8 +37,8 @@ h3 {
     text-align: center;
 }
 
-
-header img {
+header,
+img {
     margin-left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -61,7 +61,6 @@ header img {
     left: 50%;
     padding-bottom: 50px;
     transform: translate(-50%, -50%);
-
 }
 
 footer {
@@ -73,4 +72,3 @@ footer {
     color: white;
     text-align: left;
 }
-
