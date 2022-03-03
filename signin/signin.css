@@ -1,7 +1,6 @@
 html,
 body {
   width:100%;
-  margin:0;
   height:100%;
   color:black;
   font-weight:bold;
@@ -31,16 +30,20 @@ body {
     max-width:100%;
    }
 
-    .form-div {
+.auth-container{
+    height:300px;
+
+}
+
+.form-div {
+        width: 300px;
+        height: 300px;
       flex-direction: column;
       background-color: #E0D8D6;
       border: 2px black solid;
-      position: fixed;		
+      box-shadow: 5px 5px 5px gray;
+      position: relative;		
       top: 60%;
-      left: 40%;
+      left: 50%;
       transform: translate(-50%, -50%);
-    }
-  
-footer{
-    
-}
+ }
