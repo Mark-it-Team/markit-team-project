@@ -95,7 +95,6 @@ header h1 {
     object-fit: cover;
 }
 
-
 .product p {
     font-family: 'Noto Serif Display', serif;
 }
@@ -224,4 +223,12 @@ button:hover {
 p {
     text-align: center;
     font-weight: bold;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 25%;
+    padding-right: 50%;
 }

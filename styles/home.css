@@ -55,6 +55,7 @@
     padding: 2px;
     text-transform: uppercase;
     font-size: 10px;
+    color: hsla(220, 15%, 58%, 1);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
@@ -103,7 +104,8 @@
 }
 
 figure.vendor-effect {
-    background: hsla(220, 15%, 58%, 1);
+    /* background: hsla(220, 15%, 58%, 1); */
+    border-radius: 8px;
 }
 
 figure.vendor-effect img {
@@ -123,8 +125,8 @@ figure.vendor-effect figcaption::after {
 
 figure.vendor-effect figcaption::before {
     top: 50px;
-    right: 30px;
-    bottom: 50px;
+    right: 50px;
+    bottom: 80px;
     left: 30px;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
