@@ -229,7 +229,7 @@ p {
     font-weight: bold;
 }
 
-footer {
+.main-footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
