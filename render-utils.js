@@ -1,15 +1,20 @@
 export function renderVendor(vendor) {
-    const div = document.createElement('div');
+    const figure = document.createElement('figure');
+    const figCap = document.createElement('figcaption');
     const img = document.createElement('img');
+    const h2 = document.createElement('h2');
     const p = document.createElement('p');
 
-    div.classList.add('vendor');
+    figure.classList.add('vendor-effect');
     img.src = `./assets/${vendor.image}`;
-    p.textContent = vendor.name;
+    h2.textContent = vendor.name;
+    p.textContent = vendor.description;
 
-    div.append(img, p);
+    figure.append(img);
+    figCap.append(h2, p);
+    figure.append(figCap);
 
-    return div;
+    return figure;
 }
 
 export function renderVendorDetail(vendor) {
