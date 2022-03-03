@@ -38,6 +38,7 @@ h3 {
     text-align: center;
 }
 
+<<<<<<< HEAD
 header {
     max-width: 100%;
 }
@@ -60,4 +61,39 @@ img {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
+=======
+   header, img {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    max-width:100%;
+   }
+
+.auth-container{
+    height:400px;
+    margin-bottom: auto;
+}
+
+.form-div {
+      width: 400px;
+      height: 300px;
+      flex-direction: column;
+      background-color: #E0D8D6;
+      border: 2px black solid;
+      box-shadow: 5px 5px 5px gray;
+      position: relative;		
+      top: 50%;
+      left: 50%;
+      padding-bottom:50px;
+      transform: translate(-50%, -50%);
+ }
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: left;
+>>>>>>> 6901ba06034279dd48b210e0e290a3375ec831ed
 }
