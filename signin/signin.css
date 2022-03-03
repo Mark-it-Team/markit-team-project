@@ -39,16 +39,6 @@ h3 {
     text-align: center;
 }
 
-<<<<<<< HEAD
- header, img {
-    margin-left: 50%;
-    transform: translateX(-50%);
-    max-width:100%;
- }
-
-.auth-container{
-    height:400px;
-=======
 
 header,
 img {
@@ -60,7 +50,6 @@ img {
 
 .auth-container {
     height: 400px;
->>>>>>> 0223008317184583cb3c166305ec791fc8923280
     margin-bottom: auto;
 }
 
@@ -87,9 +76,5 @@ footer {
     background-color: black;
     color: white;
     text-align: left;
-<<<<<<< HEAD
-}
-=======
 }
 
->>>>>>> 0223008317184583cb3c166305ec791fc8923280
