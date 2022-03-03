@@ -139,7 +139,7 @@ header h1 {
 #cart-display h2 {
     font-size: 2rem;
     text-align: center;
-
+    font-family: 'Noto Serif Display', serif;
 }
 
 #cart-display p {
