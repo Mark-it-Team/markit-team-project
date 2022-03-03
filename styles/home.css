@@ -22,13 +22,12 @@
 .grid {
     position: relative;
     margin: 0 auto;
-    padding: 1em 0 4em;
+    padding: 1em 0 1em;
     max-width: 1000px;
     list-style: none;
     text-align: center;
 }
 
-/* Common style */
 .grid figure {
     position: relative;
     float: left;
@@ -38,9 +37,9 @@
     max-width: 480px;
     max-height: 360px;
     width: 48%;
-    background: #3085a3;
     text-align: center;
     cursor: pointer;
+    justify-content: space-between;
 }
 
 .grid figure img {
@@ -49,13 +48,13 @@
     min-height: 100%;
     max-width: 100%;
     opacity: 0.8;
+    justify-content: space-between;
 }
 
 .grid figure figcaption {
-    padding: 2em;
-    color: #fff;
+    padding: 2px;
     text-transform: uppercase;
-    font-size: 1.25em;
+    font-size: 10px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
@@ -104,17 +103,11 @@
 }
 
 figure.vendor-effect {
-    /* background: #18a367; */
-
-    background-color: hsla(220, 15%, 58%, 0.4);
-    align-items: center;
-    justify-content: center;
-    object-fit: contain;
-    height: 500px;
-    width: 640px;
+    background: hsla(220, 15%, 58%, 1);
 }
+
 figure.vendor-effect img {
-    height: 190px;
+    min-height: 100%;
 }
 
 figure.vendor-effect figcaption {
@@ -155,13 +148,13 @@ figure.vendor-effect figcaption::after {
 }
 
 figure.vendor-effect h2 {
-    /* padding-top: 26%; */
+    padding-top: 26%;
     -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
 }
 
 figure.vendor-effect p {
-    /* padding: 0.5em 2em; */
+    padding: 0.5em 2em;
     text-transform: none;
     opacity: 0;
     -webkit-transform: translate3d(0, -10px, 0);
