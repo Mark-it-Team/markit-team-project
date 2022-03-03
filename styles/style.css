@@ -5,12 +5,12 @@ body {
     --cool-grey: hsla(220, 15%, 58%, 1);
     --bittersweet-shimmer: hsla(355, 49%, 52%, 1);
     --bone: hsla(43, 38%, 90%, 1);
-    
+
     --header-height: 80px;
-    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
+    --shadow: 0px 10px 20px -12px rgba(0, 0, 0, 0.45);
     --gutter: 30px;
     --footer-height: 25px;
-    
+
     font-family: 'Noto Sans', sans-serif;
     background-color: var(--color2);
     background-color: var(--bone);
@@ -22,16 +22,15 @@ body {
     top: 90px;
 }
 
-#vendors-div {
+/* #vendors-div {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10px;
-}
-
+} */
 #vendors-div img {
     width: 500px;
-    height: 280px;
+    height: 360px;
     object-fit: cover;
 }
 
@@ -126,7 +125,6 @@ header h1 {
 
 .vendor:hover {
     cursor: pointer;
-
 }
 
 .check {
@@ -226,7 +224,7 @@ button:hover {
     margin: 10px;
 }
 
-p{
+p {
     text-align: center;
     font-weight: bold;
-    }
+}
