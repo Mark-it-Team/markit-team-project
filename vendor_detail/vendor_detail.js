@@ -15,6 +15,7 @@ const productContainer = document.getElementById('products-container');
 const homeBtn = document.getElementById('home');
 const shoppingBtn = document.getElementById('shopping-button');
 
+const user = getUser();
 logoutButton.addEventListener('click', () => {
     logout();
 });
@@ -42,13 +43,14 @@ export async function displayDetails() {
     for (let product of products) {
         const productEl = renderProduct(product);
         productEl.addEventListener('click', async () => {
-            const newItem = { customer_id: getUser().id, product_id: product.id };
-            await addCart(newItem);
-            displayDetails();
+            if (user) {
+                const newItem = { customer_id: getUser().id, product_id: product.id };
+                await addCart(newItem);
+                displayDetails();
+            }
         });
         const pId = { product_id: product.id };
         productContainer.append(productEl);
-        const user = getUser();
         if (user) {
             await greyScale(productEl, pId);
         }
