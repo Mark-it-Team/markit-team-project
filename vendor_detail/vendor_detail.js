@@ -77,9 +77,6 @@ displayDetails();
 async function greyScale(el, productId) {
     const inCart = await fetchCartInfo(getUser().id);
     inCart.map(async (item) => {
-        // const productIds = await fetchProductsByCart(item.product_id);
-        // console.log(item, 'item');
-        console.log('pid', productId.product_id);
         if (productId.product_id === item.product_id) {
             el.classList.add('in-cart');
         }
