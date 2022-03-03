@@ -5,7 +5,6 @@ import {
     addCart,
     getUser,
     fetchCartInfo,
-    fetchProductsByCart,
 } from '../fetch-utils.js';
 import { renderProduct, renderVendorDetail } from '../render-utils.js';
 
@@ -27,6 +26,10 @@ homeBtn.addEventListener('click', () => {
 shoppingBtn.addEventListener('click', () => {
     location.replace(`../reserved`);
 });
+
+if (!getUser()) {
+    logoutButton.classList.add('hidden');
+}
 
 export async function displayDetails() {
     productContainer.textContent = '';

@@ -64,6 +64,22 @@ header h1 {
 
 #vendor-container img {
     width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: auto;
+}
+
+.detail-container h2 {
+    font-family: 'Noto Serif Display', serif;
+    font-size: 3rem;
+    margin-left: 20px;
+    margin-block-start: 10px;
+}
+
+.detail-container p {
+    margin: 20px;
+    padding: 10px 40px;
+    font-weight: 100;
 }
 
 #products-container {
@@ -80,14 +96,6 @@ header h1 {
     object-fit: cover;
 }
 
-.detail-container h2 {
-    font-family: 'Noto Serif Display', serif;
-    font-size: 3rem;
-}
-
-.detail-container p {
-    font-weight: 100;
-}
 
 .product p {
     font-family: 'Noto Serif Display', serif;
