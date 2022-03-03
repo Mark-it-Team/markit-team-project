@@ -24,27 +24,37 @@ body {
         text-align: center;
     }
 
-   header {
-       max-width:100%;
+   header, img {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    max-width:100%;
    }
 
-   img {
-       height:200px;
-   }
+.auth-container{
+    height:400px;
+    margin-bottom: auto;
+}
 
-    .form-div {
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        box-sizing: border-box;
-        width:50%;
-        box-shadow: 5px 5px grey;
-        background-color: #E0D8D6;
-        border: 2px black solid;
-        position: fixed;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-  
+.form-div {
+      width: 400px;
+      height: 300px;
+      flex-direction: column;
+      background-color: #E0D8D6;
+      border: 2px black solid;
+      box-shadow: 5px 5px 5px gray;
+      position: relative;		
+      top: 50%;
+      left: 50%;
+      padding-bottom:50px;
+      transform: translate(-50%, -50%);
+ }
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: left;
+}
