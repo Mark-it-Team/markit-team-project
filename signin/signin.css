@@ -43,8 +43,7 @@ header,
 img {
     margin-left: 50%;
     transform: translateX(-50%);
-
-    max-width: 100%;
+    width: 100%;
 }
 
 .auth-container {
