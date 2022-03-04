@@ -20,7 +20,6 @@ async function displayCart() {
     cartContainer.textContent = '';
     for (let i = 0; i <= vendors.length; i++) {
         const vendorProducts = await fetchCart(i);
-        console.log(vendorProducts, i);
 
         for (let product of vendorProducts) {
             const item = product.products;
@@ -30,7 +29,6 @@ async function displayCart() {
 
                 div.classList.add('vendor-products-container');
                 h2.textContent = vendors[i - 1].name;
-                console.log('item', i);
 
                 div.append(h2);
 

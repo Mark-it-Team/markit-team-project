@@ -31,7 +31,7 @@ if (getUser()) {
 
 if (getUser()) {
     buttonsDiv.classList.add('hidden');
-    console.log(getUser().aud);
+   
 }
 
 export async function displayVendors() {

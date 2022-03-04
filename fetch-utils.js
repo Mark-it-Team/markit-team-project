@@ -39,7 +39,7 @@ export async function fetchProductsByCart(id) {
 }
 export async function fetchCartInfo(id) {
     const resp = await client.from('cart').select().match({ customer_id: id });
-    // console.log('info', resp);
+   
     return checkError(resp);
 }
 
@@ -48,7 +48,7 @@ export async function fetchCart(id) {
         .from('cart')
         .select(`product_id, products(*)`)
         .eq('products.vendor_id', id);
-    // console.log('resp', resp);
+    
     return checkError(resp);
 }
 
