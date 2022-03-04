@@ -57,7 +57,7 @@
 }
 
 .grid figure figcaption,
-.grid figure figcaption>a {
+.grid figure figcaption > a {
     position: absolute;
     top: 0;
     left: 0;
@@ -65,9 +65,8 @@
     height: 100%;
 }
 
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
-.grid figure figcaption>a {
+
+.grid figure figcaption > a {
     z-index: 1000;
     text-indent: 200%;
     white-space: nowrap;
@@ -97,8 +96,14 @@
     font-weight: 100;
 }
 
+/* main styling class: figure.vendor effect class 
+allows ability to style before and after the hover 
+after hover added blur feature, white line borders 
+(manually adjusted margin to border text) 
+learned various webkit-transform elements change how the image moves on hover
+ */
+
 figure.vendor-effect {
-    /* background: hsla(220, 15%, 58%, 1); */
     border-radius: 8px;
 }
 
