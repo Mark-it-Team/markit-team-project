@@ -22,12 +22,6 @@ body {
     top: 90px;
 }
 
-/* #vendors-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-} */
 #vendors-div img {
     width: 500px;
     height: 360px;

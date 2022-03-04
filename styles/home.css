@@ -216,6 +216,7 @@ figure.vendor-effect:hover img {
     font-family: 'Noto Serif Display', serif;
     margin: auto;
     margin-bottom: 20px;
+    min-width: 120px;
 }
 
 #dev-link {
