@@ -5,19 +5,16 @@ body {
     --cool-grey: hsla(220, 15%, 58%, 1);
     --bittersweet-shimmer: hsla(355, 49%, 52%, 1);
     --bone: hsla(43, 38%, 90%, 1);
-    
+
     --header-height: 80px;
-    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
+    --shadow: 0px 10px 20px -12px rgba(0, 0, 0, 0.45);
     --gutter: 30px;
     --footer-height: 25px;
-    
+
     font-family: 'Noto Sans', sans-serif;
     background-color: var(--color2);
-}
-
-body {
     background-color: var(--bone);
-    color: var(--jet);
+    color: var(--davys-grey);
 }
 
 #logout {
@@ -25,16 +22,9 @@ body {
     top: 90px;
 }
 
-#vendors-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-}
-
 #vendors-div img {
     width: 500px;
-    height: 280px;
+    height: 360px;
     object-fit: cover;
 }
 
@@ -53,19 +43,29 @@ header h1 {
     background-color: var(--bittersweet-shimmer);
     color: var(--bone);
     padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 
 #logout {
     font-size: 0.8rem;
     padding: 3px;
-    position: absolute;
-    top: 70px;
-    right: 10px;
 }
 
 .hidden {
     display: none;
+}
+
+.detail-container h2 {
+    font-family: 'Noto Serif Display', serif;
+    font-size: 3rem;
+    margin-left: 20px;
+    margin-block-start: 10px;
+}
+
+.detail-container p {
+    margin: 20px;
+    padding: 10px 40px;
+    font-weight: 100;
 }
 
 #products-container {
@@ -82,12 +82,20 @@ header h1 {
     object-fit: cover;
 }
 
+.select-message {
+    font-weight: 100;
+}
+
+.product p {
+    font-family: 'Noto Serif Display', serif;
+}
+
 .vendor {
     position: relative;
     color: white;
     font-weight: 900;
     font-size: 2rem;
-    font-family: 'Noto Serif', serif;
+    font-family: 'Noto Serif Display', serif;
     text-align: center;
     margin: 10px;
 }
@@ -104,7 +112,6 @@ header h1 {
 
 .vendor:hover {
     cursor: pointer;
-
 }
 
 .check {
@@ -113,40 +120,61 @@ header h1 {
 }
 
 #cart-display {
+    width: 90%;
     display: flex;
     flex-direction: column;
+    background-color: white;
+    max-width: 700px;
+    justify-content: center;
+    margin: auto;
+    border: 3px solid var(--cool-grey);
+    border-radius: 5px;
+    padding-bottom: 30px;
 }
 
 #cart-display h2 {
-    font-size: 3rem;
-    margin: auto;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Noto Serif Display', serif;
+}
+
+#cart-display p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+#cart-display img {
+    border-radius: 10px;
 }
 
 button {
     background-color: white;
     border: 3px solid var(--cool-grey);
     font-family: 'Noto Sans', sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     color: var(--bittersweet-shimmer);
     border-radius: 10px;
-    padding: 10px;
+    padding: 5px 10px;
     margin: 5px;
 }
 
 button:hover {
     cursor: pointer;
-    background-color: hsla(220, 15%, 58%, 0.4);
+    background-color: hsla(220, 15%, 58%, 0.8);
     color: hsla(355, 49%, 32%, 1);
     border: 3px solid hsla(220, 15%, 48%, 1);
 }
 
 #buttons-div {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0px;
     padding: 0px 20px 20px 20px;
     align-items: center;
+    position: absolute;
+    top: 70px;
 }
 
 .product-row img {
@@ -183,7 +211,17 @@ button:hover {
     margin: 10px;
 }
 
-p{
+p {
     text-align: center;
     font-weight: bold;
-    }
+}
+
+.main-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+    padding-right: 50%;
+    font-family: 'Noto Serif Display', serif;
+}

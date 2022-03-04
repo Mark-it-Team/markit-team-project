@@ -1,0 +1,74 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-weight: bold;
+    animation: myanimation 25s infinite;
+    transition-timing-function: ease-in-out;
+    box-sizing: border-box;
+}
+
+@keyframes myanimation {
+    0% {
+        background-color: #c14953ff;
+    }
+
+    25% {
+        background-color: #e5dcc5ff;
+    }
+
+    50% {
+        background-color: #008bf8ff;
+    }
+
+    75% {
+        background-color: #dc0073ff;
+    }
+
+    100% {
+        background-color: #aaa694ff;
+    }
+}
+
+/* On screens that are 992px or less */
+/* @media screen and (min-width: 1400px) { */
+h3 {
+    text-align: center;
+}
+
+header,
+img {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.auth-container {
+    height: 400px;
+    margin-bottom: auto;
+}
+
+.form-div {
+    width: 400px;
+    height: 300px;
+    flex-direction: column;
+    background-color: #e0d8d6;
+    border: 2px black solid;
+    box-shadow: 5px 5px 5px gray;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    padding-bottom: 50px;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: left;
+}

@@ -1,0 +1,135 @@
+body {
+    /* CSS HSL */
+    --jet: hsla(60, 3%, 17%, 1);
+    --davys-grey: hsla(60, 3%, 29%, 1);
+    --cool-grey: hsla(220, 15%, 58%, 1);
+    --bittersweet-shimmer: hsla(355, 49%, 52%, 1);
+    --bone: hsla(43, 38%, 90%, 1);
+
+    --header-height: 80px;
+    --shadow: 0px 10px 20px -12px rgba(0, 0, 0, 0.45);
+    --gutter: 30px;
+    --footer-height: 25px;
+
+    font-family: 'Noto Sans', sans-serif;
+    background-color: var(--color2);
+    background-color: var(--bone);
+    color: var(--davys-grey);
+}
+
+#buttons-div-vendor-detail {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px 20px 20px 20px;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+}
+
+.column#caption {
+    position: relative;
+}
+
+.column#caption .text {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+
+.text {
+    width: 80%;
+    background-color: hsla(0, 0%, 0%, 0.3);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.column#caption .text h1 {
+    margin: 0;
+    color: white;
+}
+
+.column#caption:hover .text {
+    opacity: 1;
+}
+
+.column#caption:hover img {
+    -webkit-filter: sepia(10%);
+}
+
+span h1 {
+    font-size: 0.8rem;
+    font-weight: 300;
+    width: 100%;
+    font-family: 'Noto Serif Display';
+}
+
+#vendor-container img {
+    display: block;
+    margin: auto;
+}
+
+.detail-container p {
+    font-size: 1.2rem;
+    padding: 10px 40px;
+    margin: 50px auto;
+    color: var(--cool-grey);
+    background-color: white;
+    border: solid white 2px;
+    border-radius: 5px;
+    width: 50%;
+}
+
+#reserve-instructions {
+    font-size: 0.6rem;
+    font-weight: 300;
+    background-color: white;
+    width: 120px;
+    margin-left: auto;
+    margin-right: 14%;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 799px) {
+    #vendor-container img {
+        width: 100%;
+        max-width: 700px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    #main-section {
+
+        display: grid;
+        grid-template-columns: 1.3fr 0.7fr;
+        grid-template-rows: 1.2fr 0.8fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            ". ."
+            ". .";
+        grid-gap: 2rem;
+    }
+
+    .detail-container {
+        width: 100%;
+    }
+
+    .detail-container img {
+        width: 100%;
+        max-width: 900px;
+    }
+
+    #products-container {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+
+    }
+}

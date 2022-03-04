@@ -1,8 +1,4 @@
-import { logout, 
-    fetchCart,
-    fetchVendors,
-    deleteFromCart, 
-    checkAuth } from '../fetch-utils.js';
+import { logout, fetchCart, fetchVendors, deleteFromCart, checkAuth } from '../fetch-utils.js';
 import { renderCartItem } from '../render-utils.js';
 
 const logoutButton = document.getElementById('logout');
@@ -22,22 +18,29 @@ checkAuth();
 async function displayCart() {
     const vendors = await fetchVendors();
     cartContainer.textContent = '';
-    for (let i = 1; i <= vendors.length; i++) {
-
-        const vendorProducts = (await fetchCart(i));
-        console.log(vendorProducts, i);
+    for (let i = 0; i <= vendors.length; i++) {
+        const vendorProducts = await fetchCart(i);
 
         for (let product of vendorProducts) {
             const item = product.products;
             if (item) {
-                console.log(vendors[i - 1].name, 'name');
+                const div = document.createElement('div');
+                const h2 = document.createElement('h2');
+
+                div.classList.add('vendor-products-container');
+                h2.textContent = vendors[i - 1].name;
+
+                div.append(h2);
+
+                cartContainer.append(div);
+
                 break;
             }
         }
 
         for (let product of vendorProducts) {
             const item = product.products;
-        
+
             if (item) {
                 const itemEl = renderCartItem(item);
                 itemEl.addEventListener('click', async () => {

@@ -16,20 +16,32 @@
         <link rel="stylesheet" href="../styles/reset.css" />
         <link rel="stylesheet" href="../styles/style.css" />
         <link rel="stylesheet" href="../styles/home.css" />
-        <title>Document</title>
+        <link rel="stylesheet" href="./vendor_detail.css">
+        <title>Vendor Detail Page</title>
     </head>
     <body>
         <header>
             <h1>mark<span class="check">✓</span>it</h1>
-            <button id="logout">LogOut</button>
+            <div id="buttons-div-vendor-detail">
+                <div id="auth-buttons">
+                    <button id="sign-up-button">sign-up</button>
+                    <button id="sign-in-button">sign-in</button>
+                </div>
+                <button id="logout">LogOut</button>
+                <button id="home">Back to the Market!</button>
+                <button id="shopping-button">
+                    <img src="../assets/shopping_cart.jpg">
+                </button>
+            </div>
         </header>
         <main>
-            <button id="home">Back to the Market!</button>
-            <button id="shopping-button">
-                <img src="../assets/shopping_cart.jpg">
-            </button>
-            <section id="vendor-container"></section>
-            <section id="products-container"></section>
+            <p id="reserve-instructions">click an item to reserve it for pickup</p>
+            <section id="main-section">
+                <section id="vendor-container">
+                </section>
+                <section id="products-container">
+                </section>
+            </section>
         </main>
         <script type="module" src="./vendor_detail.js"></script>
     </body>

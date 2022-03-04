@@ -1,89 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    /* CSS HSL */
+    --jet: hsla(60, 3%, 17%, 1);
+    --davys-grey: hsla(60, 3%, 29%, 1);
+    --cool-grey: hsla(220, 15%, 58%, 1);
+    --bittersweet-shimmer: hsla(355, 49%, 52%, 1);
+    --bone: hsla(43, 38%, 90%, 1);
+
+    --header-height: 80px;
+    --shadow: 0px 10px 20px -12px rgba(0, 0, 0, 0.45);
+    --gutter: 30px;
+    --footer-height: 25px;
+
+    font-family: 'Noto Serif';
+    background-color: var(--color2);
+
+    background-image: url(../assets/wallpaper.jpg);
+    display: flex;
+    flex-wrap: wrap;
+
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.container p {
+    background-color: rgb(53, 40, 40);
+    border: 10px solid rgba(255, 255, 255, 0.226);
+    padding: 40px;
+    color: aliceblue
+}
+
+
+header {
+    background-color: hsla(220, 15%, 58%, 0.7);
+    text-align: center;
+    width: 100vw;
+}
+
+.container img {
+    border-radius: 90%;
+    height: 400px;
+    outline: 15px solid rgb(75, 60, 60);
+    outline-offset: -3px;
+    display: grid;
+    justify-content: center;
+}
 
 
 .container {
     display: grid;
-    grid-template-columns: 0.9fr 1.1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 5px 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 10px;
     grid-auto-flow: row;
     grid-template-areas:
-        '. . . frog . . .'
-        '. . . frog-bio . . .'
-        '. per1 . . . per2 .'
-        '. per1-bio . . . per2-bio .'
-        '. . . . . . .'
-        'per3 . . per-4 . . per-5'
-        'per-3-bio . . per-4-bio . . per-5-bio';
-}
-
-body {
-    background-image: url(../assets/wallpaper.jpg);
-    display: flex;
-    flex-wrap: wrap;
-    
-    background-size: cover;
-   
-    align-content: flex-start;
-    position: relative;
-    color: white;
-    font-size: x-large;
-    font-weight: bolder;
-}
-
-.container img{
-    border-radius: 90%;
-    height: 400px;
-    /* width: 400px; */
-    overflow: hidden;
-/* 
-    width: 270px;
-  border: 20px solid rgba(63, 56, 56, 0.226); */
-  
+        ". . . frog . . ."
+        ". per1 . . . per2 ."
+        ". per3 . per-4 . per-5  .";
 }
 
 .frog {
     grid-area: frog;
 }
 
-.frog-bio {
-    grid-area: frog-bio;
-}
-
-.per1 {
-    grid-area: per1;
-}
-.per1-bio {
-    grid-area: per1-bio;
-}
-
 .per2 {
     grid-area: per2;
-}
-
-.per2-bio {
-    grid-area: per2-bio;
 }
 
 .per3 {
     grid-area: per3;
 }
 
-.per-3-bio {
-    grid-area: per-3-bio;
-}
-
 .per-4 {
     grid-area: per-4;
-}
-
-.per-4-bio {
-    grid-area: per-4-bio;
 }
 
 .per-5 {
     grid-area: per-5;
 }
 
-.per-5-bio {
-    grid-area: per-5-bio;
+.per1 {
+    grid-area: per1;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: var(--footer-height);
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--cool-grey);
+    box-shadow: var(--shadow);
+}
+
+header {
+    width: 100%;
+    height: var(--header-height);
+    position: relative;
+    top: -25px;
+    border-bottom: 1px solid var(--jet);
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+button {
+    background-color: white;
+    border: 3px solid var(--cool-grey);
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    color: var(--bittersweet-shimmer);
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px;
 }

@@ -1,4 +1,11 @@
-import { logout, fetchProducts, fetchVendorDetails, addCart, getUser } from '../fetch-utils.js';
+import {
+    logout,
+    fetchProducts,
+    fetchVendorDetails,
+    addCart,
+    getUser,
+    fetchCartInfo,
+} from '../fetch-utils.js';
 import { renderProduct, renderVendorDetail } from '../render-utils.js';
 
 const logoutButton = document.getElementById('logout');
@@ -7,7 +14,12 @@ const vendorContainer = document.getElementById('vendor-container');
 const productContainer = document.getElementById('products-container');
 const homeBtn = document.getElementById('home');
 const shoppingBtn = document.getElementById('shopping-button');
+const authButtons = document.getElementById('auth-buttons');
+const signUpButton = document.getElementById('sign-up-button');
+const signInButton = document.getElementById('sign-in-button');
+const data = +params.get('id');
 
+const user = getUser();
 logoutButton.addEventListener('click', () => {
     logout();
 });
@@ -20,20 +32,56 @@ shoppingBtn.addEventListener('click', () => {
     location.replace(`../reserved`);
 });
 
-export async function displayDetails() {
-    const data = +params.get('id');
+signUpButton.addEventListener('click', () => {
+    location.replace(`../signup`);
+});
+
+signInButton.addEventListener('click', () => {
+    location.replace(`../signin`);
+});
+
+if (!getUser()) {
+    logoutButton.classList.add('hidden');
+}
+
+if (getUser()) {
+    authButtons.classList.add('hidden');
+}
+
+async function displayVendor() {
+    vendorContainer.textContent = '';
+
     const vendor = await fetchVendorDetails(data);
     vendorContainer.append(renderVendorDetail(vendor));
+}
+async function displayDetails() {
+    productContainer.textContent = '';
 
     const products = await fetchProducts(data);
     for (let product of products) {
         const productEl = renderProduct(product);
         productEl.addEventListener('click', async () => {
-            const newItem = { customer_id: getUser().id, product_id: product.id };
-            await addCart(newItem);
+            if (user) {
+                const newItem = { customer_id: getUser().id, product_id: product.id };
+                await addCart(newItem);
+                displayDetails();
+            }
         });
+        const pId = { product_id: product.id };
         productContainer.append(productEl);
+        if (user) {
+            await greyScale(productEl, pId);
+        }
     }
 }
-
+displayVendor();
 displayDetails();
+
+async function greyScale(el, productId) {
+    const inCart = await fetchCartInfo(getUser().id);
+    inCart.map(async (item) => {
+        if (productId.product_id === item.product_id) {
+            el.classList.add('in-cart');
+        }
+    });
+}
