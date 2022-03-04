@@ -19,8 +19,8 @@ MARKIT
 
 ## Directions:
 
-Select vendor to view their products.
-Sign up and sign in to select your items.
-Add items to your reservation cart.
-Show up to the Markit and pick-up your products.
-Don't forget to checkout out the developer bio's in About Us.
+Select vendor to view their products.  
+Sign up and sign in to select your items.  
+Add items to your reservation cart.  
+Show up to the Markit and pick-up your products.  
+Don't forget to checkout out the developer bio's in About Us.  
