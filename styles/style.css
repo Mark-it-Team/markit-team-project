@@ -22,12 +22,6 @@ body {
     top: 90px;
 }
 
-/* #vendors-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-} */
 #vendors-div img {
     width: 500px;
     height: 360px;
@@ -223,9 +217,11 @@ p {
 }
 
 .main-footer {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 23%;
+    padding-top: 20px;
     padding-right: 50%;
+    font-family: 'Noto Serif Display', serif;
 }

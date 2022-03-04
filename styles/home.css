@@ -93,7 +93,8 @@
 .grid figure p {
     letter-spacing: 1px;
     font-size: 80%;
-    font-family: 'Noto Serif Display', serif;
+    font-family: 'Noto Sans', serif;
+    font-weight: 100;
 }
 
 figure.vendor-effect {
@@ -205,4 +206,21 @@ figure.vendor-effect:hover p,
 figure.vendor-effect:hover img {
     -webkit-transition-delay: 0.15s;
     transition-delay: 0.15s;
+}
+
+#meet {
+    padding: 20px;
+    width: 20%;
+    background-color: white;
+    border-radius: 10px;
+    font-family: 'Noto Serif Display', serif;
+    margin: auto;
+    margin-bottom: 20px;
+    min-width: 120px;
+}
+
+#dev-link {
+    text-decoration: none;
+    text-align: center;
+    color: hsla(355, 49%, 52%, 1);
 }

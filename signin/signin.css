@@ -37,13 +37,11 @@ h3 {
     text-align: center;
 }
 
-
 header,
 img {
     margin-left: 50%;
     transform: translateX(-50%);
-
-    max-width: 100%;
+    width: 100%;
 }
 
 .auth-container {
@@ -63,7 +61,6 @@ img {
     left: 50%;
     padding-bottom: 50px;
     transform: translate(-50%, -50%);
-
 }
 
 footer {
@@ -75,4 +72,3 @@ footer {
     color: white;
     text-align: left;
 }
-
