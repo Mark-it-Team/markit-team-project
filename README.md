@@ -1,6 +1,12 @@
-# Marketit Plan
+# MARK-IT
+![mark-it team logo](./assets/MARKit_Logo.png);
 
-![alt text](./assets/MARKit Logo.png);
+## Team Members:
+- Bradley Bird
+- Brenden Seifried
+- Kamie Short
+- Marcus Ghiringhelli
+- Sydnie Mcdonald
 
 ## Miro Link:
 
