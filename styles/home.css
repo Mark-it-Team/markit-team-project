@@ -57,7 +57,7 @@
 }
 
 .grid figure figcaption,
-.grid figure figcaption > a {
+.grid figure figcaption>a {
     position: absolute;
     top: 0;
     left: 0;
@@ -67,7 +67,7 @@
 
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */
-.grid figure figcaption > a {
+.grid figure figcaption>a {
     z-index: 1000;
     text-indent: 200%;
     white-space: nowrap;
@@ -180,7 +180,7 @@ figure.vendor-effect p {
 }
 
 figure.vendor-effect:hover img {
-    opacity: 0.7;
+    filter: blur(5px);
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
