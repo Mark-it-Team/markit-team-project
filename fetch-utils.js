@@ -39,16 +39,12 @@ export async function fetchProductsByCart(id) {
 }
 export async function fetchCartInfo(id) {
     const resp = await client.from('cart').select().match({ customer_id: id });
-   
+
     return checkError(resp);
 }
 
-export async function fetchCart(id) {
-    const resp = await client
-        .from('cart')
-        .select(`product_id, products(*)`)
-        .eq('products.vendor_id', id);
-    
+export async function fetchCart() {
+    const resp = await client.from('cart').select(`product_id, products(*, vendors(*))`);
     return checkError(resp);
 }
 
