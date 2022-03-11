@@ -7,3 +7,4 @@ Y'all did a great job! Its beautiful and slick and works well. A few notes / tho
 -   I'm still not 100% certain you need the database trigger -- its very cool and would be perfect if you need _more_ customer information (like their name, address, etc) but since the customer doesn't have additional information, I think you could have just added a default value to the `customer_id` column that defaulted to the currently signed in user
 -   You have your CSS variables across multiple files -- if you move them to a file called `variables.css` you can just include that on any page that needs them so you don't have to define them across multiple files
 -   Would love to see some messaging to the user that they need to log in to reserve items -- right now it just silently fails
+-   You can rename your netlify deploy so it has a more meaningful name (markit.netlify.app for example)
